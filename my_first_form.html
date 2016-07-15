@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>My First HTML Form</title>
+	</head>
+	<body>
+		<h2>Login Form</h2>
+		<form method="POST" action="http://requestb.in/16ss1gx1">
+			<div>
+				<p>
+					<label for="username">Username</label>
+					<input id="username" name="username" type="text" placeholder="Username Goes Here">
+				</p>
+				<p>
+					<label for="password">Password</label>
+					<input id="password" name="password" type="password" placeholder="Password Goes Here">
+				</p>
+				<p>
+					<button type="submit">Login</button>
+				</p>
+			</div>
+		</form>
+		<h2>Send New Message</h2>
+		<form method="POST" action="http://requestb.in/16ss1gx1">
+			<div>
+				<p>
+					<label for="to">To</label><br>
+					<input id="to" type="to" name="to" placeholder="Recipient">
+				</p>
+				<p>
+					<label for="from">From</label><br>
+					<input id="from" type="from" name="from" placeholder="Sender">
+				</p>
+				<p>
+					<label for="subject">Subject</label><br>
+					<textarea id="subject" name="subject" rows="1" cols="50" placeholder="Subject"></textarea>
+				</p>
+				<p>
+					<label for="email_body">Email Body</label><br>
+					<textarea id="email_body" name="email_body" rows="5" cols="50" placeholder="Hi"></textarea>
+				</p>
+				<p>Would you like to save a copy of this message?</p>
+				<label>
+					<input type="checkbox" id="save" name="save[]" checked>Save
+				</label><br><br>
+				<button type="submit">Send message</button>
+			</div>
+		</form>
+		<form>
+			<h2>Multple Choice Test</h2>
+			<div>
+				<p>The sky is blue.</p>
+				<label>
+					<input type="radio" name="q1" value="true">True
+				</label>
+				<label>
+					<input type="radio" name="q1" value="false">False
+				</label>
+			</div>
+			<div>
+				<p>What color is the sky?</p>
+				<label>
+					<input type="radio" name="q2" value="red">Red
+				</label>
+				<label>
+					<input type="radio" name="q2" value="blue">Blue
+				</label>
+				<label>
+					<input type="radio" name="q2" value="yellow">Yellow
+				</label>
+				<label>
+					<input type="radio" name="q2" value="all" checked>All of the above
+				</label>
+			</div>
+		</form>
+	</body>
